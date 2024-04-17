@@ -1,0 +1,11 @@
+{
+    "dataset_name": "custom",
+    "model_name": "resnet18",
+    "epochs": 100,
+    "num_cls": 100,
+    "input_dim": 3,
+    "optimizer": "adam",
+    "lr": 0.001,
+    "weight_decay": 5e-4
+}
+

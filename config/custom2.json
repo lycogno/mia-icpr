@@ -1,0 +1,30 @@
+{
+    "name": "custom",
+    "model": {
+        "type": "resnet18",
+        "pretrained": false
+    },
+    "dataset": {
+        "type": "custom",
+        "root_dir": "/path/to/dataset",
+        "csv_file": "/path/to/dataset/dataset.csv",
+        "transform": {
+            "resize": [32, 32],
+            "normalize": {
+                "mean": [0.5, 0.5, 0.5],
+                "std": [0.5, 0.5, 0.5]
+            }
+        }
+    },
+    "train": {
+        "batch_size": 64,
+        "num_epochs": 100,
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "log_interval": 10
+    },
+    "val": {
+        "batch_size": 1000
+    }
+}
